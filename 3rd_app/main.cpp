@@ -18,15 +18,15 @@ int figures[7][4] =
     2,3,4,5,
 };
 
-/*bool check()
+bool check()
 {
    for (int i=0;i<4;i++)
       if (a[i].x<0 || a[i].x>=N || a[i].y>=M) return 0;
-      else if (field[a[i].y][a[i].x]) re       turn 0;
+      else if (field[a[i].y][a[i].x]) return 0;
 
    return 1;
 };
-*/
+
 
 int main()
 {
@@ -68,7 +68,7 @@ int main()
 
     //// <- Move -> ///
     for (int i=0;i<4;i++)  { b[i]=a[i]; a[i].x+=dx; }
-//    if (!check()) for (int i=0;i<4;i++) a[i]=b[i];
+     if (!check()) for (int i=0;i<4;i++) a[i]=b[i];
 
     //////Rotate//////
     if (rotate)
@@ -81,7 +81,7 @@ int main()
             a[i].x = p.x - x;
             a[i].y = p.y + y;
            }
-//           if (!check()) for (int i=0;i<4;i++) a[i]=b[i];
+           if (!check()) for (int i=0;i<4;i++) a[i]=b[i];
       }
 
     ///////Tick//////
@@ -89,7 +89,7 @@ int main()
       {
         for (int i=0;i<4;i++) { b[i]=a[i]; a[i].y+=1; }
 
-    //    if (!check())
+        if (!check())
         {
          for (int i=0;i<4;i++) field[b[i].y][b[i].x]=colorNum;
 

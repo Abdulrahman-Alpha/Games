@@ -4,7 +4,6 @@
 #include <SFML/Audio.hpp>
 #include <time.h>
 using namespace sf;
-/*
 int N=30,M=20;
 int size=16;
 int w = size*N;
@@ -44,12 +43,12 @@ int main()
 
     RenderWindow window(VideoMode(w, h), "Snake Game!");
 
-    Texture texture1,texture2;
+    Texture t1,t2;
     t1.loadFromFile("images/white.png");
     t2.loadFromFile("images/red.png");
 
-    Sprite sprite1(texture1);
-    Sprite sprite2(texture2);
+    Sprite sprite1(t1);
+    Sprite sprite2(t2);
 
     Clock clock;
     float timer=0, delay=0.1;
@@ -91,33 +90,4 @@ int main()
 
     window.display();
     }
-
-    return 0;
-}*/
-int main()
-{
-    RenderWindow window(VideoMode(760, 480), "TETRIS GAME!");
-
-    Event e;
-    while (window.pollEvent(e))
-        {
-            if (e.type == Event::Closed)
-                window.close();
-        }
-     Music music;
-    if (!music.openFromFile("sound.ogg"))
-        std::cout << "Music failed to load!" << std::endl;
-    else
-       music.play();
-    /*SoundBuffer buffer;
-    if (!buffer.loadFromFile("sound.ogg"))
-        return -1;
-    Sound sound;
-    sound.setBuffer(buffer);
-    return 0;
-        */
-
-    //window.draw();
-    window.display();
 }
-

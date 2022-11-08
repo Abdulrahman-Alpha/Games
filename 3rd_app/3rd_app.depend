@@ -412,3 +412,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
+1667341061 source:c:\mythings\apps\games\3rd_app\main.cpp
+	<SFML/Graphics.hpp>
+	<time.h>
+

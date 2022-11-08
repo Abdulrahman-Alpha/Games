@@ -113,7 +113,6 @@ int main(int argc, char ** argv)
      }
      if(sPers.getPosition().x <0.f){
         sPers.setPosition(0.f,sPers.getPosition().y);
-        dy = -5;
      }
     app.draw(sBackground);
     app.draw(sPers);

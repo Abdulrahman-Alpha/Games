@@ -598,3 +598,14 @@
 	<SFML/Network/IpAddress.hpp>
 	<vector>
 
+1667249527 source:c:\mythings\apps\games\2nd_app\main.cpp
+	<iostream>
+	<random>
+	<SFML/Graphics.hpp>
+	<SFML/System.hpp>
+	<SFML/Window.hpp>
+	<SFML/Audio.hpp>
+	<SFML/Network.hpp>
+	"SFML/Graphics.hpp"
+	<iostream>
+

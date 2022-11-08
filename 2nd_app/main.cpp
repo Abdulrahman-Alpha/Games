@@ -250,11 +250,11 @@ int main (int argc, char ** argv){
   }
   Text text ;
   text.setFont(font);
-  text.setString(" Welcome To Panic Room  ");
+  text.setString(" Welcome To Panic Room ");
   text.setCharacterSize( 150 );
   text.setColor(Color::Red);
   //sprite.setTextureRect(IntRect(90,90,40,40));
-  sprite.setColor(Color::Red);
+  //sprite.setColor(Color::Red);
   while(renderWindow.isOpen()){
       while (renderWindow.pollEvent(event)){
         if (event.type == Event::EventType::Closed)
